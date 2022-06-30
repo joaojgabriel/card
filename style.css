@@ -56,7 +56,7 @@ body {
 h2,
 .actual {
   font-family: Fraunces, serif;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .type,
@@ -181,7 +181,6 @@ main {
     justify-content: flex-end;
   }
   .prices {
-    font-size: 2.5rem;
     flex: 0;
     align-self: flex-end;
   }
