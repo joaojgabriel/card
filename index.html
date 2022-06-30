@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product preview card component</title>
+
+    <style>
+      footer {
+        font-size: 1.1rem;
+        text-align: center;
+      }
+      footer a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <picture>
+          <source
+            media="(max-width: 687px)"
+            srcset="images/image-product-mobile.jpg"
+          />
+          <img
+            src="images/image-product-desktop.jpg"
+            alt="Glass of perfume lying on a white table with branches of leaves"
+          />
+        </picture>
+        <section class="content">
+          <section class="description">
+            <span class="type">Perfume</span>
+            <header class="name">
+              <h2>Gabrielle Essence Eau De Parfum</h2>
+            </header>
+            <p>
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+          </section>
+          <section class="prices">
+            <span class="actual"> $149.99 </span>
+            <span class="original"> $169.99 </span>
+          </section>
+          <a href="">Add to Cart</a>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">João Gabriel</a>.
+    </footer>
+  </body>
+</html>

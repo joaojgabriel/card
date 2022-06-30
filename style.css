@@ -1,0 +1,214 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Remove default margin */
+body,
+h2,
+p {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100dvh;
+  text-rendering: optimizeSpeed;
+  background-color: hsl(30, 38%, 92%);
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for button */
+button {
+  font: inherit;
+}
+
+/* Remove smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}
+
+/* Typography */
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.4rem;
+}
+
+h2,
+.actual {
+  font-family: Fraunces, serif;
+  font-size: 2em;
+}
+
+.type,
+p,
+.original {
+  color: hsl(228, 12%, 48%);
+}
+
+.type {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.actual {
+  color: hsl(158, 36%, 37%);
+}
+
+.original {
+  text-decoration: line-through;
+}
+
+button {
+  color: white;
+}
+
+/* Main */
+
+main {
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 5dvh auto;
+  width: 90%;
+  height: 90dvh;
+}
+
+@media screen and (min-width: 687px) {
+  .card {
+    flex-direction: row;
+    max-height: 43.5rem;
+    max-width: 56rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .card {
+    max-height: 56rem;
+    max-width: 75rem;
+  }
+}
+
+.content {
+  margin: 3rem 2rem;
+}
+
+/* Picture */
+
+.card img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+@media screen and (min-width: 687px) {
+  .card picture {
+    width: 50%;
+  }
+  .card img {
+    border-radius: 1rem 0 0 1rem;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Content */
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+/* Description */
+.description > * {
+  margin: 1rem 0;
+}
+
+.description {
+  flex: 2;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 2000px) {
+  .description {
+    flex: 1;
+    display: block;
+  }
+}
+
+/* Prices */
+
+.prices {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.actual {
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 2000px) {
+  .content {
+    justify-content: flex-end;
+  }
+  .prices {
+    font-size: 2.5rem;
+    flex: 0;
+    align-self: flex-end;
+  }
+}
+
+/* Button */
+
+.card a::before {
+  content: url(images/icon-cart.svg);
+  padding: 1.4rem;
+  border-radius: 1rem 1rem 0 0;
+}
+  
+.card a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+  padding: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.card a:active {
+  background-color: hsl(212, 21%, 14%);
+}
