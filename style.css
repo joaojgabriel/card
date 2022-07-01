@@ -88,7 +88,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: minmax(100dvh, min-content);
+  height: minmax(min-content, 100dvh);
 }
 
 /* Card */
@@ -99,7 +99,7 @@ main {
   border-radius: 1rem;
   margin: 5dvh auto;
   width: 90%;
-  height: minmax(90vh, min-content);
+  height: minmax(min-content, 90dvh);
 }
 
 @media screen and (min-width: 687px) {
