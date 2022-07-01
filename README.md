@@ -7,6 +7,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Links](#links)
+  - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -26,6 +27,10 @@ Users should be able to:
 
 - [Solution](https://www.frontendmentor.io/solutions/responsive-preview-card-component-using-flexbox-k0NQA3-dbE)
 - [Live Site](https://joaojgabriel.github.io/card/)
+
+### Screenshot
+
+![](./screenshot.png)
 
 ## My process
 
